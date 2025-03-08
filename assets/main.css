@@ -1,0 +1,106 @@
+/* App-wide styling */
+body,
+html {
+    background-color: #0f1116;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+}
+
+#main {
+    margin: 0;
+    display: flex;
+    /* Imposta Flexbox per allineare gli elementi */
+    flex-wrap: wrap;
+    /* Permette di andare a capo quando lo spazio finisce */
+    gap: 20px;
+    /* Spazio tra le card */
+    justify-content: center;
+    /* Centra le card orizzontalmente */
+    margin-top: 20px;
+    /* Distanza dal top */
+}
+
+/* Stile generale per la card */
+.card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+
+    /* Spazio tra le card */
+    border-radius: 10px;
+    /* Angoli arrotondati */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Ombra leggera */
+    background-color: black;
+    /* Sfondo bianco */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Effetto hover per ingrandire la card e cambiarne l'ombra */
+.card:hover {
+    transform: translateY(-5px);
+    /* Sposta la card verso l'alto */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    /* Ombra più pronunciata */
+}
+
+/* Immagine della card */
+.card img {
+    width: 100%;
+    /* Immagine che occupa tutta la larghezza */
+    height: 280px;
+    /* Altezza fissa per l'immagine */
+
+    /* Immagine che occupa tutta la larghezza */
+    object-fit: cover;
+    /* Ritaglia l'immagine mantenendo il rapporto */
+    mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+}
+
+
+/* Titolo della card */
+.card .content h2 {
+    font-size: 20px;
+    /* Dimensione del titolo */
+    font-weight: bold;
+    /* Grassetto */
+    color: #888;
+    /* Colore del testo */
+    margin-bottom: 8px;
+    /* Spazio sotto il titolo */
+}
+
+/*  della card */
+.card .content h3 {
+    font-size: 16px;
+    /* Dimensione del titolo */
+    font-weight: bold;
+    /* Grassetto */
+    color: #333;
+    /* Colore del testo */
+    margin-bottom: 8px;
+    /* Spazio sotto il titolo */
+}
+
+/* Dettagli della card */
+.card .content p {
+    font-size: 14px;
+    /* Dimensione del testo descrittivo */
+    color: #666;
+    /* Colore grigio per il testo */
+    line-height: 1.6;
+    /* Interlinea */
+}
+
+/* Data della card */
+.card #data {
+    font-size: 12px;
+    /* Dimensione del testo della data */
+    color: #888;
+    /* Colore della data */
+    margin-top: 12px;
+    /* Spazio sopra la data */
+    font-style: italic;
+    /* Corsivo per la data */
+}
