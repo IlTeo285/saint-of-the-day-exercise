@@ -48,13 +48,10 @@ html {
 /* Immagine della card */
 .card img {
     width: 100%;
-    /* Immagine che occupa tutta la larghezza */
     height: 280px;
-    /* Altezza fissa per l'immagine */
 
-    /* Immagine che occupa tutta la larghezza */
+    object-position: top;
     object-fit: cover;
-    /* Ritaglia l'immagine mantenendo il rapporto */
     mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
 }
 
