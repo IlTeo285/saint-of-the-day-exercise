@@ -8,17 +8,58 @@ html {
 }
 
 #main {
+    font-family: Arial, sans-serif;
     margin: 0;
+    padding: 0;
     display: flex;
-    /* Imposta Flexbox per allineare gli elementi */
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px;
+    background: transparent;
+    color: #888;
+}
+
+.button {
+    background: transparent;
+    border: 2px solid #555;
+    font-size: 24px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    color: #555;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    flex: 1;
+    width: 100%;
+    display: flex;
     flex-wrap: wrap;
-    /* Permette di andare a capo quando lo spazio finisce */
-    gap: 20px;
-    /* Spazio tra le card */
     justify-content: center;
-    /* Centra le card orizzontalmente */
-    margin-top: 20px;
-    /* Distanza dal top */
+    padding: 20px;
+}
+
+
+.arrow {
+    cursor: pointer;
+    font-size: 20px;
+    color: #555;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: bold;
 }
 
 /* Stile generale per la card */
@@ -57,7 +98,7 @@ html {
 
 
 /* Titolo della card */
-.card .content h2 {
+.card .card-content h2 {
     font-size: 20px;
     /* Dimensione del titolo */
     font-weight: bold;
@@ -69,7 +110,7 @@ html {
 }
 
 /*  della card */
-.card .content h3 {
+.card .card-content h3 {
     font-size: 16px;
     /* Dimensione del titolo */
     font-weight: bold;
@@ -81,7 +122,7 @@ html {
 }
 
 /* Dettagli della card */
-.card .content p {
+.card .card-content p {
     font-size: 14px;
     /* Dimensione del testo descrittivo */
     color: #666;

@@ -8,6 +8,7 @@ edition = "2021"
 
 [dependencies]
 chrono = "0.4.40"
+chrono-tz = "0.10.1"
 dioxus = { version = "0.6.0", features = [] }
 reqwest = { version = "0.12.12", features = ["json"] }
 serde = { version = "1.0.218", features = ["derive"] }
